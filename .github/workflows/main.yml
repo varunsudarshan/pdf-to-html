@@ -34,7 +34,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Convert PDF to HTML
         run: |
-          pdf2htmlEX ./resume_gmail.pdf
+          pdf2htmlEX --zoom 1.5 ./resume_gmail.pdf
           ls
           mkdir build
           mv resume_gmail.html build/index.html
