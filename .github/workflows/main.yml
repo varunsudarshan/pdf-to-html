@@ -37,7 +37,7 @@ jobs:
           pdf2htmlEX ./resume_gmail.pdf
           ls
           mkdir build
-          mv resume_gmail.html build/
+          mv resume_gmail.html build/index.html
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
